@@ -8,7 +8,7 @@ GeoMoE是一个在OpticalRS-4M上进行预训练的遥感基础模型，以超�
 
 ## TodoList
 
-- [*] 开源GeoMoE和MoE的训练权重🤗[HuggingFace](https://huggingface.co/BoZhangNuaa/GeoMoE)
+- [x] 开源GeoMoE和MoE的训练权重🤗[HuggingFace](https://huggingface.co/BoZhangNuaa/GeoMoE)
 - [ ] 开源下游任务的微调代码和微调参数
   - [ ] 场景分类🤗[HuggingFace](https://huggingface.co/BoZhangNuaa/GeoMoE)
   - [ ] 目标检测🤗[HuggingFace](https://huggingface.co/BoZhangNuaa/GeoMoE)
@@ -18,6 +18,7 @@ GeoMoE是一个在OpticalRS-4M上进行预训练的遥感基础模型，以超�
 ## Reference
 
 本项目的代码构建参考了[ConvMAE](https://github.com/Alpha-VL/ConvMAE)和[SelectiveMAE](https://github.com/MiliLab/SelectiveMAE)。
+
 
 
 
