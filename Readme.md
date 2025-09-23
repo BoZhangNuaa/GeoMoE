@@ -19,14 +19,14 @@ GeoMoE是一个在OpticalRS-4M上进行预训练的遥感基础模型，以超�
 
 我们再次复现了论文中的实验结果，如表格所示：
 
-| Downstream Tasks      | Datasets | MoE                                    | GeoMoE                                    |
-| --------------------- | -------- | -------------------------------------- | ----------------------------------------- |
-| Sence Classification  |          |                                        |                                           |
-|                       |          |                                        |                                           |
-| Object Detection      | DIOR     | 76.40([log](./Detection/dior/MoE.log)) | 79.30([log](./Detection/dior/GeoMoE.log)) |
-|                       |          |                                        |                                           |
-| Semantic Segmentation |          |                                        |                                           |
-|                       |          |                                        |                                           |
+| Downstream Tasks      | Datasets   | MoE                                    | GeoMoE                                    |
+| --------------------- | ---------- | -------------------------------------- | ----------------------------------------- |
+| Sence Classification  | AID        |                                        |                                           |
+| Sence Classification  | RESISC-45  |                                        |                                           |
+| Object Detection      | DIOR       | 76.40([log](./Detection/dior/MoE.log)) | 79.30([log](./Detection/dior/GeoMoE.log)) |
+| Object Detection      | DIOR-R     |                                        |                                           |
+| Semantic Segmentation | LoveDA     |                                        |                                           |
+| Semantic Segmentation | SpaceNetv1 |                                        |                                           |
 
 - [ ] ### Sence Classification
 

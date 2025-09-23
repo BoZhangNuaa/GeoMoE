@@ -11,7 +11,7 @@ custom_imports = dict(
         'config.GeoMoE',
         'config.FasterRCNN_AUX',
     ])
-data_root = '/data1/bozhang/datasets/coco/DIOR'
+data_root = '/datasets/coco/DIOR'
 
 default_hooks = dict(
     checkpoint=dict(interval=3, type='CheckpointHook'),
@@ -83,7 +83,7 @@ model = dict(
             2,
         ],
         pretrained=
-        '/data1/bozhang/ICASSP/GeoMoE.pth',
+        '/GeoMoE.pth',
         type='GeoMoEDet'),
     data_preprocessor=dict(
         bgr_to_rgb=True,
@@ -268,7 +268,7 @@ test_dataloader = dict(
         ann_file='annotations/test.json',
         backend_args=None,
         data_prefix=dict(img='images'),
-        data_root='/data1/bozhang/datasets/coco/DIOR',
+        data_root='/datasets/coco/DIOR',
         metainfo=dict(
             classes=(
                 'baseballfield',
@@ -315,7 +315,7 @@ test_dataloader = dict(
     persistent_workers=True,
     sampler=dict(shuffle=False, type='DefaultSampler'))
 test_evaluator = dict(
-    ann_file='/data1/bozhang/datasets/coco/DIOR/annotations/test.json',
+    ann_file='/datasets/coco/DIOR/annotations/test.json',
     backend_args=None,
     format_only=False,
     metric='bbox',
@@ -344,7 +344,7 @@ train_dataloader = dict(
         ann_file='annotations/trainval.json',
         backend_args=None,
         data_prefix=dict(img='images'),
-        data_root='/data1/bozhang/datasets/coco/DIOR',
+        data_root='/datasets/coco/DIOR',
         filter_cfg=dict(filter_empty_gt=True, min_size=4),
         metainfo=dict(
             classes=(
@@ -400,7 +400,7 @@ val_dataloader = dict(
         ann_file='annotations/test.json',
         backend_args=None,
         data_prefix=dict(img='images'),
-        data_root='/data1/bozhang/datasets/coco/DIOR',
+        data_root='/datasets/coco/DIOR',
         metainfo=dict(
             classes=(
                 'baseballfield',
@@ -447,7 +447,7 @@ val_dataloader = dict(
     persistent_workers=True,
     sampler=dict(shuffle=False, type='DefaultSampler'))
 val_evaluator = dict(
-    ann_file='/data1/bozhang/datasets/coco/DIOR/annotations/test.json',
+    ann_file='/datasets/coco/DIOR/annotations/test.json',
     backend_args=None,
     format_only=False,
     metric='bbox',
