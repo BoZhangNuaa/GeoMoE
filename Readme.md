@@ -15,10 +15,28 @@ GeoMoE是一个在OpticalRS-4M上进行预训练的遥感基础模型，以超�
   - [ ] 语义分割
 - [ ] 开源预训练代码
 
+## Experiments
+
+我们再次复现了论文中的实验结果，如表格所示：
+
+| Downstream Tasks      | Datasets | MoE                                    | GeoMoE                                    |
+| --------------------- | -------- | -------------------------------------- | ----------------------------------------- |
+| Sence Classification  |          |                                        |                                           |
+|                       |          |                                        |                                           |
+| Object Detection      | DIOR     | 76.40([log](./Detection/dior/MoE.log)) | 79.30([log](./Detection/dior/GeoMoE.log)) |
+|                       |          |                                        |                                           |
+| Semantic Segmentation |          |                                        |                                           |
+|                       |          |                                        |                                           |
+
+- [ ] ### Sence Classification
+
+- [ ] ### Object Detection
+
+- [ ] ### Semantic Segmentation
+
 ## Reference
 
 本项目的代码构建参考了[ConvMAE](https://github.com/Alpha-VL/ConvMAE)和[SelectiveMAE](https://github.com/MiliLab/SelectiveMAE)。
-
 
 
 
