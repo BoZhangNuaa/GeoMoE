@@ -28,11 +28,11 @@ GeoMoE是一个在OpticalRS-4M上进行预训练的遥感基础模型，以超�
 | Semantic Segmentation | LoveDA     |                                        |                                           |
 | Semantic Segmentation | SpaceNetv1 |                                        |                                           |
 
-- [ ] ### Sence Classification
+### Sence Classification
 
-- [ ] ### Object Detection
+### Object Detection
 
-- [ ] ### Semantic Segmentation
+### Semantic Segmentation
 
 ## Reference
 
