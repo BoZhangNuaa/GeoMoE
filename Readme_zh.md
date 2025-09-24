@@ -1,4 +1,4 @@
-  <h2 align="center"><strong>	Efficient Self-Supervised Learning for Remote Sensing via Sparse Convolutional Mixture-of-Experts</strong></h2>
+  <h2 align="center"><strong>	Efficient Self-Supervised Learning for Remote Sensing via <\br>Sparse Convolutional Mixture-of-Experts</strong></h2>
 
   <p align="center">
     Bo Zhang<sup>12</sup>&nbsp;&nbsp;&nbsp;
@@ -10,12 +10,12 @@
   <sup>2</sup>The Key Laboratory of Brain-Machine Intelligence Technology, Ministry of Education &nbsp;&nbsp;&nbsp;</br>
   <sup>3</sup>College of Astronautics, Nanjing University of Aeronautics and Astronautics&nbsp;&nbsp;
 <div align='center' style="font-size: larger; "><strong>Patent pending</strong></div>
-
   <p align="center">
     📃 <a href="" target="_blank">Paper (Patent pending)</a> |
     🤗 <a href="https://huggingface.co/BoZhangNuaa/GeoMoE" target="_blank">Models</a> |
-    📃 <a href="https://github.com/BoZhangNuaa/GeoMoE/Readme.md" target="_blank">en</a>
+    📃 <a href="https://github.com/BoZhangNuaa/GeoMoE/blob/main/Readme.md" target="_blank">en</a>
   </p>
+
 
 ## Intruduction
 
