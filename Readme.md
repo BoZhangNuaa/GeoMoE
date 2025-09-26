@@ -21,7 +21,7 @@
 
 ## Intruduction
 
-GeoMoE is a remote sensing foundation model pretrained on OpticalRS-4M, achieving faster training and convergence speeds with an ultra-sparse mixture-of-experts architecture and convolutional front-end, while also delivering strong evaluation scores on downstream tasks.
+GeoMoE is a remote sensing foundation model pretrained on [OpticalRS-4M](https://huggingface.co/datasets/initiacms/OpticalRS-4M), achieving faster training and convergence speeds with an ultra-sparse mixture-of-experts architecture and convolutional front-end, while also delivering strong evaluation scores on downstream tasks.
 
 ## News
 
@@ -36,7 +36,7 @@ GeoMoE is a remote sensing foundation model pretrained on OpticalRS-4M, achievin
   - [x] Scene classification
   - [x] Object detection
   - [x] Semantic segmentation
-- [ ] Open-source pretrained code
+- [x] Open-source pretrained code
 
 ## Experiments
 
@@ -52,6 +52,15 @@ Experimental results and logs are shown in the table:
 | Object Detection      | DIOR-R        | 69.70([log](./Detection/dior-r/MoE.log))            | 71.82([log](./Detection/dior-r/GeoMoE.log))               |
 | Semantic Segmentation | LoveDA        | 53.48([log](./Segmentation/Loveda/MoE.zip))         | 54.76([log](./Segmentation/Loveda/GeoMoE.zip))            |
 | Semantic Segmentation | SpaceNetv1    | 86.46([log](./Segmentation/Spacenet/MoE.log))       | 86.62([log](./Segmentation/Spacenet/GeoMoE.log))          |
+
+### Pretrain
+
+We train for 400 epochs on [OpticalRS-4M](https://huggingface.co/datasets/initiacms/OpticalRS-4M) using the following command:
+
+```shell
+cd Pretrain 
+bash train.sh
+```
 
 ### Scene Classification
 

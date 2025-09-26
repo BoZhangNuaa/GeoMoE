@@ -19,7 +19,7 @@
 
 ## Intruduction
 
-GeoMoE是一个在OpticalRS-4M上进行预训练的遥感基础模型，以超稀疏的混合专家结构和卷积前端取得了更快的训练速度和收敛速度，并在下游任务上有好的评测得分。
+GeoMoE是一个在[OpticalRS-4M](https://huggingface.co/datasets/initiacms/OpticalRS-4M)上进行预训练的遥感基础模型，以超稀疏的混合专家结构和卷积前端取得了更快的训练速度和收敛速度，并在下游任务上有好的评测得分。
 
 ## News
 
@@ -50,6 +50,15 @@ GeoMoE是一个在OpticalRS-4M上进行预训练的遥感基础模型，以超�
 | Object Detection      | DIOR-R        | 69.70([log](./Detection/dior-r/MoE.log))            | 71.82([log](./Detection/dior-r/GeoMoE.log))               |
 | Semantic Segmentation | LoveDA        | 53.48([log](./Segmentation/Loveda/MoE.zip))         | 54.76([log](./Segmentation/Loveda/GeoMoE.zip))            |
 | Semantic Segmentation | SpaceNetv1    | 86.46([log](./Segmentation/Spacenet/MoE.log))       | 86.62([log](./Segmentation/Spacenet/GeoMoE.log))          |
+
+### Pretrain
+
+我们在[OpticalRS-4M](https://huggingface.co/datasets/initiacms/OpticalRS-4M)上进行400个epoch的训练，使用以下命令运行：
+
+```shell
+cd Pretrain 
+bash train.sh
+```
 
 ### Sence Classification
 
