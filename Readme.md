@@ -26,8 +26,10 @@ GeoMoE is a remote sensing foundation model pretrained on [OpticalRS-4M](https:/
 ## News
 
 - `2025.09`：Create repository.
-- `2025.09`：Announced content related to object detection.
-- `2025.09`：Announced the relevant content of semantic segmentation.
+- `2025.09`：Released the relevant content of object detection.
+- `2025.09`：Released the relevant content of semantic segmentation.
+- `2025.09`：Released the relevant content of scene classification.
+- `2025.09`：Released the relevant code of pretraining.
 
 ## TodoList
 

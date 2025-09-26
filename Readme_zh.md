@@ -26,6 +26,8 @@ GeoMoE是一个在[OpticalRS-4M](https://huggingface.co/datasets/initiacms/Optic
 - `2025.09`：创建仓库
 - `2025.09`：公布了目标检测的相关内容
 - `2025.09`：公布了语义分割的相关内容
+- `2025.09`：公布了场景分类的相关内容
+- `2025.09`：公布了预训练的相关代码
 
 ## TodoList
 
