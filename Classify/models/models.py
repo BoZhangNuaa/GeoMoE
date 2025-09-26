@@ -1,0 +1,6 @@
+import models.GeoMoE_classify as GeoMoE_classify
+import models.MoE_classify as MoE_classify
+
+
+GeoMoE = GeoMoE_classify.classify_geomoe_base_patch16_dec512d8b
+MoE = MoE_classify.classify_moemae_vit_base_patch16_dec512d8b

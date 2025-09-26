@@ -32,8 +32,8 @@ GeoMoE is a remote sensing foundation model pretrained on OpticalRS-4M, achievin
 ## TodoList
 
 - [x] Open-source training weights for `GeoMoE` and `MoE` 🤗[HuggingFace](https://huggingface.co/BoZhangNuaa/GeoMoE)
-- [ ] Finetuning code, parameters, and logs for open-source downstream tasks.
-  - [ ] Scene classification
+- [x] Finetuning code, parameters, and logs for open-source downstream tasks.
+  - [x] Scene classification
   - [x] Object detection
   - [x] Semantic segmentation
 - [ ] Open-source pretrained code
@@ -42,26 +42,44 @@ GeoMoE is a remote sensing foundation model pretrained on OpticalRS-4M, achievin
 
 Experimental results and logs are shown in the table:
 
-| Downstream Tasks      | Datasets   | MoE                                           | GeoMoE                                           |
-| --------------------- | ---------- | --------------------------------------------- | ------------------------------------------------ |
-| Scene Classification  | AID        |                                               |                                                  |
-| Scene Classification  | RESISC-45  |                                               |                                                  |
-| Object Detection      | DIOR       | 76.40([log](./Detection/dior/MoE.log))        | 79.30([log](./Detection/dior/GeoMoE.log))        |
-| Object Detection      | DIOR-R     | 69.70([log](./Detection/dior-r/MoE.log))      | 71.82([log](./Detection/dior-r/GeoMoE.log))      |
-| Semantic Segmentation | LoveDA     | 53.48([log](./Segmentation/Loveda/MoE.zip))   | 54.76([log](./Segmentation/Loveda/GeoMoE.zip))   |
-| Semantic Segmentation | SpaceNetv1 | 86.46([log](./Segmentation/Spacenet/MoE.log)) | 86.62([log](./Segmentation/Spacenet/GeoMoE.log)) |
+| Downstream Tasks      | Datasets      | MoE                                                 | GeoMoE                                                    |
+| --------------------- | ------------- | --------------------------------------------------- | --------------------------------------------------------- |
+| Scene Classification  | AID 20%       | 96.77([log](./Classify/MoE/AID/MoE_AID_20.log))     | 97.01([log](./Classify/GeoMoE/AID/GeoMoE_AID_20.log))     |
+|                       | AID 50%       | 98.18([log](./Classify/MoE/AID/MoE_AID_50.log))     | 98.40([log](./Classify/GeoMoE/AID/GeoMoE_AID_50.log))     |
+| Scene Classification  | RESISC-45 10% | 93.80([log](./Classify/MoE/NWPU/MoE_RESISC_10.log)) | 94.47([log](./Classify/GeoMoE/NWPU/GeoMoE_RESISC_10.log)) |
+|                       | RESISC-45 20% | 95.59([log](./Classify/MoE/NWPU/MoE_RESISC_20.log)) | 96.04([log](./Classify/GeoMoE/NWPU/GeoMoE_RESISC_20.log)) |
+| Object Detection      | DIOR          | 76.40([log](./Detection/dior/MoE.log))              | 79.30([log](./Detection/dior/GeoMoE.log))                 |
+| Object Detection      | DIOR-R        | 69.70([log](./Detection/dior-r/MoE.log))            | 71.82([log](./Detection/dior-r/GeoMoE.log))               |
+| Semantic Segmentation | LoveDA        | 53.48([log](./Segmentation/Loveda/MoE.zip))         | 54.76([log](./Segmentation/Loveda/GeoMoE.zip))            |
+| Semantic Segmentation | SpaceNetv1    | 86.46([log](./Segmentation/Spacenet/MoE.log))       | 86.62([log](./Segmentation/Spacenet/GeoMoE.log))          |
 
 ### Scene Classification
 
+For ease of processing, we converted RESISC and AID to COCO format, with the annotation files retained in [RESISC](./Classify/RESISC) and [AID](./Classify/AID).
+
+Use the following command to run:
+
+```shell
+cd Classify
+bash GeoMoE.sh
+bash GeoMoE_AID.sh
+bash MoE.sh
+bash MoE_AID.sh
+```
+
 ### Object Detection
 
-For ease of processing, we converted DIOR to COCO format, with the annotation files retained in [annotation.zip](./Detection/dior/annotation.zip)。
+For ease of processing, we converted DIOR to COCO format, with the annotation files retained in [annotation.zip](./Detection/dior/annotation.zip).
+
+The downstream task is implemented based on [mmdetection](https://github.com/open-mmlab/mmdetection) and [mmrotate](https://github.com/open-mmlab/mmrotate/tree/1.x) respectively.
 
 ### Semantic Segmentation
 
 We used the first 5000 samples of SpaceNetv1 for training and the remaining samples for testing, with this split ratio consistent with [SelectiveMAE](https://github.com/MiliLab/SelectiveMAE).
 
 `LovaDA` is an online evaluation, so we are replacing the publication of logs with the publication of model outputs.
+
+The downstream task is implemented based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation).
 
 ## Reference
 
