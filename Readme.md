@@ -30,6 +30,7 @@ GeoMoE is a remote sensing foundation model pretrained on [OpticalRS-4M](https:/
 - `2025.09`：Released the relevant content of semantic segmentation.
 - `2025.09`：Released the relevant content of scene classification.
 - `2025.09`：Released the relevant code of pretraining.
+- `2026.03`: Released the training weights for `GeoMoE_L`.
 
 ## TodoList
 
@@ -39,6 +40,8 @@ GeoMoE is a remote sensing foundation model pretrained on [OpticalRS-4M](https:/
   - [x] Object detection
   - [x] Semantic segmentation
 - [x] Open-source pretrained code
+- [x] Open-source training weights for `GeoMoE_L` 🤗[HuggingFace](https://huggingface.co/BoZhangNuaa/GeoMoE)
+- [ ] Release the fine-tuning code, parameters, and logs for the downstream tasks of `GeoMoE_L`.
 
 ## Experiments
 
