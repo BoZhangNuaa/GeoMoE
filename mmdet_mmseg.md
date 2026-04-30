@@ -704,16 +704,16 @@ param_scheduler = [
     dict(
         type='CosineAnnealingLR',
         eta_min=0.0,
-        T_max=78500,
-        begin=1500,
-        end=80000,
+        T_max=19500,
+        begin=500,
+        end=20000,
         by_epoch=False,
     )
 ]
 
 # training schedule for 80k
 train_cfg = dict(type='IterBasedTrainLoop',
-                 max_iters=80000, val_interval=80000)
+                 max_iters=20000, val_interval=20000)
 #val_cfg = dict(type='ValLoop')
 test_cfg = dict(type='TestLoop')
 default_hooks = dict(
