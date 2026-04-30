@@ -90,6 +90,12 @@ LovaDA为在线评测，因此我们将公布日志替换为公布模型输出�
 
 该下游任务基于 [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) 实现。
 
+## 微调操作指南
+
+[目标检测 & 语义分割](./mmdet_mmseg.md)
+
+[场景分类](./classify.md)
+
 ## Reference
 
 本项目的代码构建参考了[ConvMAE](https://github.com/Alpha-VL/ConvMAE)和[SelectiveMAE](https://github.com/MiliLab/SelectiveMAE)。
