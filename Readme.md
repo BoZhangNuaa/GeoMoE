@@ -11,7 +11,7 @@
   <sup>3</sup>College of Astronautics, Nanjing University of Aeronautics and Astronautics&nbsp;&nbsp;
 <div align='center' style="font-size: larger; "><strong>Patent pending</strong></div>
   <p align="center">
-    📃 <a href="" target="_blank">Paper (Patent pending)</a> |
+    📃 <a href="https://www.paperdigest.org/paper/?paper_id=icassp-ICASSP55912.2026.11461494-2026-05-04" target="_blank">Paper</a> |
     🤗 <a href="https://huggingface.co/BoZhangNuaa/GeoMoE" target="_blank">Models</a> |
     📃 <a href="https://github.com/BoZhangNuaa/GeoMoE/blob/main/Readme_zh.md" target="_blank">zh</a>
   </p>
